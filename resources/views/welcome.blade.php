@@ -14,7 +14,12 @@
 
     <ul>
         @foreach ($movies as $movie)
-            <li>{{ $movie }}</li>
+            <li>Titolo: {{ $movie['title'] }}</li>
+            <li>Titolo in lingua originale: {{ $movie['original_title'] }}</li>
+            <li>Nazione: {{ $movie['nationality'] }}</li>
+            <li>Data di uscita: {{ $movie['date'] }}</li>
+            <li>Voto medio: {{ $movie['vote'] }}</li>
+            <hr>
         @endforeach
     </ul>
 </body>
